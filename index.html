@@ -100,6 +100,63 @@ footer{
         grid-template-columns:1fr;
     }
 }
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: #f5c400;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.services-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.service-card span {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #f5c400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #f5c400;
+  box-shadow: 0 0 20px rgba(245, 196, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 </head>
@@ -128,42 +185,48 @@ target="_blank">
 </div>
 
 <section>
-<h2>Nuestros <span>Servicios</span></h2>
+<section id="servicios" class="services">
+  <h2>NUESTROS SERVICIOS</h2>
 
-<div class="grid">
+  <div class="services-grid">
 
-<div class="card">
-<h3>🔋 Reparación de baterías</h3>
-<p>
-Diagnóstico, reparación y mantenimiento de baterías
-para herramientas inalámbricas.
-</p>
-</div>
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20reparación%20de%20herramientas" class="service-card">
+      <span>🔧</span>
+      <h3>REPARACIÓN DE HERRAMIENTAS</h3>
+      <p>Diagnóstico y reparación profesional.</p>
+    </a>
 
-<div class="card">
-<h3>🛠️ Reparación de herramientas</h3>
-<p>
-Reparamos herramientas eléctricas e inalámbricas
-de diferentes marcas.
-</p>
-</div>
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20reparación%20de%20baterías" class="service-card">
+      <span>🔋</span>
+      <h3>REPARACIÓN DE BATERÍAS</h3>
+      <p>Reparación y mantenimiento de baterías.</p>
+    </a>
 
-<div class="card">
-<h3>⚙️ Repuestos</h3>
-<p>
-Venta de repuestos y componentes para herramientas.
-</p>
-</div>
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20repuestos" class="service-card">
+      <span>⚙️</span>
+      <h3>REPUESTOS ORIGINALES</h3>
+      <p>Repuestos para diferentes marcas y modelos.</p>
+    </a>
 
-<div class="card">
-<h3>🛒 Venta de herramientas</h3>
-<p>
-Herramientas profesionales para trabajo, taller
-y construcción.
-</p>
-</div>
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20herramientas%20eléctricas" class="service-card">
+      <span>🛠️</span>
+      <h3>HERRAMIENTAS ELÉCTRICAS</h3>
+      <p>Herramientas profesionales para todo tipo de trabajo.</p>
+    </a>
 
-</div>
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20herramientas%20inalámbricas" class="service-card">
+      <span>🔋</span>
+      <h3>HERRAMIENTAS INALÁMBRICAS</h3>
+      <p>Potencia y libertad de trabajo sin cables.</p>
+    </a>
+
+    <a href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20accesorios" class="service-card">
+      <span>📦</span>
+      <h3>ACCESORIOS</h3>
+      <p>Accesorios y complementos para tus herramientas.</p>
+    </a>
+
+  </div>
 </section>
 
 <section>

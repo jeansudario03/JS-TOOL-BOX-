@@ -15,35 +15,45 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#0b0b0b;
+    background:#111;
     color:#fff;
-    line-height:1.5;
 }
 
 header{
-    background:#050505;
-    border-bottom:3px solid #ffd400;
-    padding:20px;
+    background:#000;
+    padding:18px 20px;
     text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    border-bottom:3px solid #ffd000;
 }
 
 .logo{
-    font-size:38px;
+    font-size:32px;
     font-weight:900;
-    color:#ffd400;
+    color:#ffd000;
     letter-spacing:2px;
 }
 
 .logo span{
-    color:white;
+    color:#fff;
 }
 
-header p{
-    color:#aaa;
-    margin-top:5px;
+.hero{
+    text-align:center;
+    padding:55px 20px;
+    background:linear-gradient(135deg,#111,#202020);
+}
+
+.hero h1{
+    font-size:42px;
+    color:#ffd000;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#ddd;
+    max-width:700px;
+    margin:auto;
 }
 
 .container{
@@ -52,36 +62,15 @@ header p{
     margin:auto;
 }
 
-.hero{
+section{
+    padding:45px 0;
+}
+
+.title{
     text-align:center;
-    padding:65px 20px;
-    background:
-    linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.92));
-}
-
-.hero h1{
-    font-size:42px;
-    color:#ffd400;
-    margin-bottom:15px;
-}
-
-.hero p{
-    color:#ddd;
-    font-size:18px;
-    max-width:750px;
-    margin:auto;
-}
-
-.section{
-    padding:50px 0;
-}
-
-.section-title{
-    text-align:center;
-    color:#ffd400;
-    font-size:32px;
-    margin-bottom:35px;
-    text-transform:uppercase;
+    color:#ffd000;
+    font-size:30px;
+    margin-bottom:30px;
 }
 
 .grid{
@@ -91,216 +80,151 @@ header p{
 }
 
 .card{
-    background:#151515;
-    border:1px solid #292929;
-    border-radius:12px;
+    background:#1d1d1d;
+    border:1px solid #333;
+    border-radius:14px;
     padding:25px;
-    transition:.25s;
+    text-align:center;
+    transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
-    border-color:#ffd400;
-    box-shadow:0 0 20px rgba(255,212,0,.12);
+    border-color:#ffd000;
 }
 
 .card h3{
-    color:#ffd400;
-    margin-bottom:10px;
-    font-size:21px;
+    color:#ffd000;
+    margin-bottom:12px;
 }
 
 .card p{
-    color:#bbb;
-    margin-bottom:20px;
+    color:#ccc;
+    line-height:1.5;
+    margin-bottom:18px;
 }
 
+button,
 .btn{
     display:inline-block;
-    background:#ffd400;
+    border:none;
+    background:#ffd000;
     color:#000;
     padding:12px 18px;
-    border-radius:7px;
-    text-decoration:none;
+    border-radius:8px;
     font-weight:bold;
-    border:none;
     cursor:pointer;
-    transition:.2s;
+    text-decoration:none;
+    transition:.3s;
 }
 
+button:hover,
 .btn:hover{
     background:#fff;
 }
 
-.btn-dark{
-    background:#222;
+.whatsapp{
+    background:#25D366;
     color:#fff;
-    border:1px solid #ffd400;
 }
 
-.btn-dark:hover{
-    background:#ffd400;
-    color:#000;
+.whatsapp:hover{
+    background:#1ebe5d;
 }
 
-.catalog-brand{
+.brand{
+    min-height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
     cursor:pointer;
-    text-align:center;
-    min-height:100px;
+}
+
+.category{
+    cursor:pointer;
+    min-height:120px;
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-.catalog-brand h3{
-    font-size:23px;
+.product{
+    text-align:left;
+}
+
+.product-image{
+    width:100%;
+    height:190px;
+    background:#292929;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#777;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.product h3{
+    color:#ffd000;
+    margin-bottom:10px;
+}
+
+.product p{
+    margin-bottom:10px;
+}
+
+.specs{
+    background:#111;
+    border-radius:8px;
+    padding:12px;
+    margin:15px 0;
+    color:#ddd;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.back{
+    margin-bottom:25px;
 }
 
 .hidden{
     display:none;
 }
 
-.catalog-panel{
-    margin-top:30px;
-    background:#111;
-    border:1px solid #292929;
-    border-radius:12px;
-    padding:25px;
-}
-
-.panel-title{
-    text-align:center;
-    color:#ffd400;
-    font-size:28px;
-    margin-bottom:25px;
-}
-
-.back{
-    margin-bottom:20px;
-}
-
-.category{
-    cursor:pointer;
-    text-align:center;
-}
-
-.category h3{
-    color:#fff;
-}
-
-.category p{
-    color:#999;
-}
-
-.product-card{
-    overflow:hidden;
-}
-
-.product-image{
-    height:190px;
-    background:#222;
-    border-radius:8px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#777;
-    font-weight:bold;
-    margin-bottom:18px;
-    text-align:center;
-}
-
-.product-info h4{
-    color:#ffd400;
-    font-size:20px;
-    margin-bottom:8px;
-}
-
-.product-info p{
-    color:#bbb;
-    font-size:14px;
-    margin-bottom:15px;
-}
-
-.specs{
-    background:#0b0b0b;
-    border-left:3px solid #ffd400;
-    padding:12px;
-    margin-bottom:15px;
-    font-size:13px;
-    color:#ccc;
-}
-
-.whatsapp{
-    display:block;
-    width:100%;
-    text-align:center;
-    background:#25D366;
-    color:#fff;
-    padding:12px;
-    border-radius:7px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.whatsapp:hover{
-    opacity:.85;
-}
-
-.notice{
-    text-align:center;
-    padding:25px;
-    color:#999;
-    background:#151515;
-    border-radius:10px;
-}
-
 .contact{
-    background:#111;
+    background:#000;
     text-align:center;
+    border-top:3px solid #ffd000;
 }
 
-.contact-box{
-    max-width:700px;
-    margin:auto;
-    background:#151515;
-    padding:30px;
-    border-radius:12px;
-    border:1px solid #292929;
-}
-
-.contact-box p{
+.contact p{
     margin:10px 0;
     color:#ddd;
 }
 
 footer{
     text-align:center;
-    padding:25px;
-    background:#050505;
-    border-top:2px solid #ffd400;
-    color:#888;
+    padding:20px;
+    background:#000;
+    color:#777;
+    font-size:14px;
 }
 
 @media(max-width:600px){
-
-    .logo{
-        font-size:30px;
-    }
 
     .hero h1{
         font-size:32px;
     }
 
-    .hero p{
-        font-size:16px;
-    }
-
-    .section-title{
+    .logo{
         font-size:27px;
     }
 
-    .grid{
-        grid-template-columns:1fr;
+    .title{
+        font-size:25px;
     }
 }
 </style>
@@ -309,43 +233,37 @@ footer{
 <body>
 
 <header>
-
     <div class="logo">
         JS <span>TOOL BOX</span>
     </div>
-
-    <p>Herramientas • Reparaciones • Repuestos</p>
-
 </header>
 
 
+<!-- HERO -->
 <section class="hero">
-
     <div class="container">
 
         <h1>JS TOOL BOX</h1>
 
         <p>
-            Venta de herramientas, repuestos, accesorios y servicio técnico
-            especializado para herramientas eléctricas e inalámbricas.
+            Reparación de herramientas, reparación de baterías,
+            repuestos, herramientas eléctricas, inalámbricas y accesorios.
         </p>
 
     </div>
-
 </section>
 
 
-<!-- ================= SERVICIOS ================= -->
-
-<section class="section">
+<!-- SERVICIOS -->
+<section>
 
 <div class="container">
 
-<h2 class="section-title">Servicios que ofrecemos</h2>
+<h2 class="title">SERVICIOS</h2>
 
 <div class="grid">
 
-
+<!-- REPARACIÓN DE HERRAMIENTAS -->
 <div class="card">
 
 <h3>🔧 REPARACIÓN DE HERRAMIENTAS</h3>
@@ -354,767 +272,919 @@ footer{
 Diagnóstico y reparación de herramientas eléctricas e inalámbricas.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20la%20reparación%20de%20una%20herramienta.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20la%20reparación%20de%20una%20herramienta."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 
+<!-- BATERÍAS -->
 <div class="card">
 
 <h3>🔋 REPARACIÓN DE BATERÍAS</h3>
 
 <p>
-Diagnóstico, reparación y mantenimiento de baterías para herramientas.
+Revisión, diagnóstico y reparación de baterías para herramientas.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20la%20reparación%20de%20una%20batería.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20sobre%20la%20reparación%20de%20una%20batería."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 
+<!-- REPUESTOS -->
 <div class="card">
 
 <h3>⚙️ REPUESTOS ORIGINALES</h3>
 
 <p>
-Repuestos para herramientas de diferentes marcas.
+Repuestos y componentes para diferentes marcas de herramientas.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20un%20repuesto.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20un%20repuesto."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 
+<!-- ELÉCTRICAS -->
 <div class="card">
 
-<h3>🔌 HERRAMIENTAS ELÉCTRICAS</h3>
+<h3>⚡ HERRAMIENTAS ELÉCTRICAS</h3>
 
 <p>
 Taladros, esmeriladoras, amoladoras y más.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20una%20herramienta%20eléctrica.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20una%20herramienta%20eléctrica."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 
+<!-- INALÁMBRICAS -->
 <div class="card">
 
 <h3>🔋 HERRAMIENTAS INALÁMBRICAS</h3>
 
 <p>
-Herramientas a batería para uso profesional.
+Herramientas a batería para trabajo profesional.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20una%20herramienta%20inalámbrica.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20una%20herramienta%20inalámbrica."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 
+<!-- ACCESORIOS -->
 <div class="card">
 
-<h3>🧰 ACCESORIOS</h3>
+<h3>🛠️ ACCESORIOS</h3>
 
 <p>
-Accesorios y complementos para tus herramientas.
+Accesorios para herramientas eléctricas e inalámbricas.
 </p>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20un%20accesorio.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20un%20accesorio."
+target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
 
 </div>
-
 </div>
 
 </section>
 
 
-<!-- ================= CATALOGO ================= -->
 
-<section class="section" id="catalogo">
+<!-- CATÁLOGO -->
+
+<section id="catalogo">
 
 <div class="container">
 
-<h2 class="section-title">🛒 Catálogo JS TOOL BOX</h2>
+<h2 class="title">CATÁLOGO</h2>
 
-<p style="text-align:center;color:#aaa;margin-bottom:30px;">
-Selecciona una marca para ver sus categorías.
-</p>
+<div id="brands">
 
+<div class="grid">
 
-<!-- MARCAS -->
-
-<div id="brands" class="grid">
-
-
-<div class="card catalog-brand" onclick="showBrand('dewalt')">
-<h3>DEWALT</h3>
+<div class="card brand" onclick="showBrand('dewalt')">
+DEWALT
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('stanley')">
-<h3>STANLEY</h3>
+<div class="card brand" onclick="showBrand('stanley')">
+STANLEY
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('craftsman')">
-<h3>CRAFTSMAN</h3>
+<div class="card brand" onclick="showBrand('craftsman')">
+CRAFTSMAN
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('makita')">
-<h3>MAKITA</h3>
+<div class="card brand" onclick="showBrand('makita')">
+MAKITA
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('bosch')">
-<h3>BOSCH</h3>
+<div class="card brand" onclick="showBrand('bosch')">
+BOSCH
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('ryobi')">
-<h3>RYOBI</h3>
+<div class="card brand" onclick="showBrand('ryobi')">
+RYOBI
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('blackdecker')">
-<h3>BLACK+DECKER</h3>
+<div class="card brand" onclick="showBrand('blackdecker')">
+BLACK+DECKER
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('ingco')">
-<h3>INGCO</h3>
+<div class="card brand" onclick="showBrand('ingco')">
+INGCO
 </div>
 
-
-<div class="card catalog-brand" onclick="showBrand('total')">
-<h3>TOTAL</h3>
+<div class="card brand" onclick="showBrand('total')">
+TOTAL
 </div>
 
+</div>
 
 </div>
 
 
-<!-- ================= DEWALT ================= -->
 
-<div id="dewalt" class="catalog-panel hidden">
+<!-- DEWALT -->
 
-<button class="btn back" onclick="backBrands()">← VOLVER</button>
+<div id="dewalt" class="hidden">
 
-<h3 class="panel-title">DEWALT</h3>
-
-
-<div id="dewaltCategories" class="grid">
-
-
-<div class="card category" onclick="showCategory('dewalt-electric')">
-
-<h3>🔌 HERRAMIENTAS ELÉCTRICAS</h3>
-
-<p>Herramientas con cable</p>
-
-</div>
-
-
-<div class="card category" onclick="showCategory('dewalt-cordless')">
-
-<h3>🔋 HERRAMIENTAS INALÁMBRICAS</h3>
-
-<p>Herramientas a batería</p>
-
-</div>
-
-
-<div class="card category" onclick="showCategory('dewalt-batteries')">
-
-<h3>🔋 BATERÍAS</h3>
-
-<p>Baterías y cargadores</p>
-
-</div>
-
-
-<div class="card category" onclick="showCategory('dewalt-parts')">
-
-<h3>⚙️ REPUESTOS</h3>
-
-<p>Repuestos para herramientas</p>
-
-</div>
-
-
-<div class="card category" onclick="showCategory('dewalt-accessories')">
-
-<h3>🧰 ACCESORIOS</h3>
-
-<p>Accesorios y consumibles</p>
-
-</div>
-
-
-</div>
-
-
-<!-- PRODUCTOS DEWALT -->
-
-<div id="dewalt-electric" class="hidden">
-
-<button class="btn btn-dark back" onclick="showBrand('dewalt')">
-← Categorías
+<button class="back" onclick="backBrands()">
+← VOLVER A MARCAS
 </button>
 
-<h3 class="panel-title">HERRAMIENTAS ELÉCTRICAS DEWALT</h3>
+<h2 class="title">DEWALT</h2>
+
+<div class="grid">
+
+<div class="card category" onclick="showCategory('dewalt-electricas')">
+⚡ HERRAMIENTAS ELÉCTRICAS
+</div>
+
+<div class="card category">
+🔋 HERRAMIENTAS INALÁMBRICAS
+</div>
+
+<div class="card category">
+🔋 BATERÍAS
+</div>
+
+<div class="card category">
+⚙️ REPUESTOS
+</div>
+
+<div class="card category">
+🛠️ ACCESORIOS
+</div>
+
+</div>
+
+</div>
 
 
-<h3 style="color:#ffd400;margin:25px 0 15px;">
+
+<!-- DEWALT ELÉCTRICAS -->
+
+<div id="dewalt-electricas" class="hidden">
+
+<button class="back" onclick="showBrand('dewalt')">
+← VOLVER A DEWALT
+</button>
+
+<h2 class="title">
+DEWALT - HERRAMIENTAS ELÉCTRICAS
+</h2>
+
+
+<!-- TALADROS -->
+
+<h2 class="title">
 TALADROS 3/8" Y 1/2"
-</h3>
+</h2>
 
 <div class="grid">
 
 
-<div class="card product-card">
+<!-- DWD014 -->
+<div class="card product">
 
 <div class="product-image">
 FOTO DWD014-B3
 </div>
 
-<div class="product-info">
-
-<h4>DWD014-B3</h4>
+<h3>DEWALT DWD014-B3</h3>
 
 <p>
-Taladro eléctrico compacto DEWALT para trabajos profesionales.
+Taladro compacto de 3/8" para trabajos profesionales.
 </p>
 
 <div class="specs">
+
+<strong>Ficha técnica</strong><br>
 Potencia: 600 W<br>
 Mandril: 3/8" (10 mm)<br>
-Velocidad: hasta 28.000 RPM
+Velocidad: hasta 28.000 RPM<br>
+Tipo: Eléctrico
+
 </div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD014-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD014-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 
-<div class="card product-card">
+<!-- DWD024 -->
+<div class="card product">
 
 <div class="product-image">
 FOTO DWD024-B3
 </div>
 
-<div class="product-info">
-
-<h4>DWD024-B3</h4>
+<h3>DEWALT DWD024-B3</h3>
 
 <p>
-Taladro eléctrico DEWALT para perforación y trabajos profesionales.
+Taladro percutor compacto para trabajos profesionales.
 </p>
 
 <div class="specs">
+
+<strong>Ficha técnica</strong><br>
 Potencia: 710 W<br>
-Mandril: 3/8"
+Mandril: 3/8"<br>
+Tipo: Taladro percutor<br>
+Tipo: Eléctrico
+
 </div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD024-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD024-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 
-<div class="card product-card">
+<!-- DW508S -->
+<div class="card product">
 
 <div class="product-image">
 FOTO DW508S-B3
 </div>
 
-<div class="product-info">
-
-<h4>DW508S-B3</h4>
+<h3>DEWALT DW508S-B3</h3>
 
 <p>
-Taladro DEWALT de alto rendimiento.
+Taladro percutor para trabajos exigentes.
 </p>
 
 <div class="specs">
-Potencia: 700 W
+
+<strong>Ficha técnica</strong><br>
+Potencia: 700 W<br>
+Mandril: 1/2"<br>
+Tipo: Percutor<br>
+Tipo: Eléctrico
+
 </div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DW508S-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DW508S-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 
-<div class="card product-card">
+<!-- DW505 -->
+<div class="card product">
 
 <div class="product-image">
 FOTO DW505-B3
 </div>
 
-<div class="product-info">
-
-<h4>DW505-B3</h4>
+<h3>DEWALT DW505-B3</h3>
 
 <p>
-Taladro DEWALT de alta potencia para trabajos exigentes.
+Taladro percutor de alto rendimiento.
 </p>
 
 <div class="specs">
-Potencia: 800 W
+
+<strong>Ficha técnica</strong><br>
+Potencia: 800 W<br>
+Mandril: 1/2"<br>
+Tipo: Percutor<br>
+Tipo: Eléctrico
+
 </div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DW505-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DW505-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 
-<div class="card product-card">
+<!-- DWD520K -->
+<div class="card product">
 
 <div class="product-image">
 FOTO DWD520K-B3
 </div>
 
-<div class="product-info">
-
-<h4>DWD520K-B3</h4>
+<h3>DEWALT DWD520K-B3</h3>
 
 <p>
-Taladro DEWALT de alto rendimiento para trabajos profesionales.
+Taladro percutor profesional de alta potencia.
 </p>
 
 <div class="specs">
-Potencia: 1100 W
+
+<strong>Ficha técnica</strong><br>
+Potencia: 1100 W<br>
+Mandril: 1/2"<br>
+Tipo: Percutor<br>
+Tipo: Eléctrico
+
 </div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD520K-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWD520K-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 </div>
 
 
-<h3 style="color:#ffd400;margin:40px 0 15px;">
+
+<!-- ESMERILADORAS -->
+
+<h2 class="title">
 ESMERILADORAS 4-1/2" Y 5"
-</h3>
-
+</h2>
 
 <div class="grid">
 
 
-<div class="card product-card">
+<div class="card product">
 
-<div class="product-image">FOTO DWE4020-B3</div>
+<div class="product-image">
+FOTO DWE4020-B3
+</div>
 
-<div class="product-info">
+<h3>DEWALT DWE4020-B3</h3>
 
-<h4>DWE4020-B3</h4>
+<p>
+Esmeriladora angular compacta para trabajos profesionales.
+</p>
 
-<p>Esmeriladora angular DEWALT.</p>
+<div class="specs">
+<strong>Ficha técnica</strong><br>
+Tipo: Esmeriladora angular<br>
+Diámetro: 4-1/2"<br>
+Uso: Profesional
+</div>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4020-B3.">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4020-B3."
+target="_blank">
+
 Consultar por WhatsApp
+
 </a>
 
 </div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4120-B3
 </div>
 
+<h3>DEWALT DWE4120-B3</h3>
 
-<div class="card product-card">
+<p>
+Esmeriladora angular de alto rendimiento.
+</p>
 
-<div class="product-image">FOTO DWE4120-B3</div>
+<div class="specs">
+<strong>Ficha técnica</strong><br>
+Tipo: Esmeriladora angular<br>
+Diámetro: 4-1/2"<br>
+Uso: Profesional
+</div>
 
-<div class="product-info">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4120-B3."
+target="_blank">
 
-<h4>DWE4120-B3</h4>
-
-<p>Esmeriladora angular DEWALT.</p>
-
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4120-B3.">
 Consultar por WhatsApp
+
 </a>
 
 </div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4212-B3
 </div>
 
+<h3>DEWALT DWE4212-B3</h3>
 
-<div class="card product-card">
+<p>
+Esmeriladora angular profesional.
+</p>
 
-<div class="product-image">FOTO DWE4212-B3</div>
+<div class="specs">
+<strong>Ficha técnica</strong><br>
+Tipo: Esmeriladora angular<br>
+Diámetro: 4-1/2"<br>
+Uso: Profesional
+</div>
 
-<div class="product-info">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4212-B3."
+target="_blank">
 
-<h4>DWE4212-B3</h4>
-
-<p>Esmeriladora angular DEWALT.</p>
-
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4212-B3.">
 Consultar por WhatsApp
+
 </a>
 
 </div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4314-B3
 </div>
 
+<h3>DEWALT DWE4314-B3</h3>
 
-<div class="card product-card">
+<p>
+Esmeriladora angular para trabajos exigentes.
+</p>
 
-<div class="product-image">FOTO DWE4314-B3</div>
+<div class="specs">
+<strong>Ficha técnica</strong><br>
+Tipo: Esmeriladora angular<br>
+Diámetro: 4-1/2"<br>
+Uso: Profesional
+</div>
 
-<div class="product-info">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4314-B3."
+target="_blank">
 
-<h4>DWE4314-B3</h4>
-
-<p>Esmeriladora angular DEWALT.</p>
-
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4314-B3.">
 Consultar por WhatsApp
+
 </a>
 
 </div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4315-B3
 </div>
 
+<h3>DEWALT DWE4315-B3</h3>
 
-<div class="card product-card">
+<p>
+Esmeriladora angular profesional.
+</p>
 
-<div class="product-image">FOTO DWE4315-B3</div>
+<div class="specs">
+<strong>Ficha técnica</strong><br>
+Tipo: Esmeriladora angular<br>
+Diámetro: 4-1/2"<br>
+Uso: Profesional
+</div>
 
-<div class="product-info">
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4315-B3."
+target="_blank">
 
-<h4>DWE4315-B3</h4>
-
-<p>Esmeriladora angular DEWALT.</p>
-
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4315-B3.">
 Consultar por WhatsApp
+
 </a>
 
 </div>
-</div>
 
 </div>
 
 
-<h3 style="color:#ffd400;margin:40px 0 15px;">
+
+<!-- AMOLADORAS -->
+
+<h2 class="title">
 AMOLADORAS 7" Y 9"
-</h3>
-
-
-<div class="grid">
-
-
-<div class="card product-card">
-<div class="product-image">FOTO DWE4557-B3</div>
-<div class="product-info">
-<h4>DWE4557-B3</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4557-B3.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-
-<div class="card product-card">
-<div class="product-image">FOTO DWE4577-B3</div>
-<div class="product-info">
-<h4>DWE4577-B3</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4577-B3.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-
-<div class="card product-card">
-<div class="product-image">FOTO DWE4559-B3</div>
-<div class="product-info">
-<h4>DWE4559-B3</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE4559-B3.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-
-<div class="card product-card">
-<div class="product-image">FOTO DWE491-B3</div>
-<div class="product-info">
-<h4>DWE491-B3</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE491-B3.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-
-<div class="card product-card">
-<div class="product-image">FOTO DWE490-B3</div>
-<div class="product-info">
-<h4>DWE490-B3</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20DWE490-B3.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-
-<div class="card product-card">
-<div class="product-image">FOTO D28499X</div>
-<div class="product-info">
-<h4>D28499X</h4>
-<p>Amoladora angular DEWALT.</p>
-<a class="whatsapp" href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20la%20D28499X.">Consultar por WhatsApp</a>
-</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div id="dewalt-cordless" class="hidden">
-<div class="notice">Próximamente agregaremos las herramientas inalámbricas DEWALT.</div>
-</div>
-
-
-<div id="dewalt-batteries" class="hidden">
-<div class="notice">Próximamente agregaremos baterías y cargadores DEWALT.</div>
-</div>
-
-
-<div id="dewalt-parts" class="hidden">
-<div class="notice">Próximamente agregaremos repuestos DEWALT.</div>
-</div>
-
-
-<div id="dewalt-accessories" class="hidden">
-<div class="notice">Próximamente agregaremos accesorios DEWALT.</div>
-</div>
-
-</div>
-
-
-<!-- ================= OTRAS MARCAS ================= -->
-
-<div id="otherBrand" class="catalog-panel hidden">
-
-<button class="btn back" onclick="backBrands()">← VOLVER</button>
-
-<h3 id="otherBrandTitle" class="panel-title"></h3>
+</h2>
 
 <div class="grid">
 
-<div class="card category">
-<h3>🔌 HERRAMIENTAS ELÉCTRICAS</h3>
-<p>Próximamente</p>
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4557-B3
 </div>
 
-<div class="card category">
-<h3>🔋 HERRAMIENTAS INALÁMBRICAS</h3>
-<p>Próximamente</p>
-</div>
+<h3>DEWALT DWE4557-B3</h3>
 
-<div class="card category">
-<h3>🔋 BATERÍAS</h3>
-<p>Próximamente</p>
-</div>
+<p>
+Amoladora angular de 7" para trabajos profesionales.
+</p>
 
-<div class="card category">
-<h3>⚙️ REPUESTOS</h3>
-<p>Próximamente</p>
-</div>
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4557-B3."
+target="_blank">
 
-<div class="card category">
-<h3>🧰 ACCESORIOS</h3>
-<p>Próximamente</p>
-</div>
+Consultar por WhatsApp
+
+</a>
 
 </div>
 
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4577-B3
 </div>
 
+<h3>DEWALT DWE4577-B3</h3>
+
+<p>
+Amoladora angular profesional de alta potencia.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4577-B3."
+target="_blank">
+
+Consultar por WhatsApp
+
+</a>
+
+</div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE4559-B3
+</div>
+
+<h3>DEWALT DWE4559-B3</h3>
+
+<p>
+Amoladora angular para trabajos pesados.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE4559-B3."
+target="_blank">
+
+Consultar por WhatsApp
+
+</a>
+
+</div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE491-B3
+</div>
+
+<h3>DEWALT DWE491-B3</h3>
+
+<p>
+Amoladora angular profesional.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE491-B3."
+target="_blank">
+
+Consultar por WhatsApp
+
+</a>
+
+</div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO DWE490-B3
+</div>
+
+<h3>DEWALT DWE490-B3</h3>
+
+<p>
+Amoladora angular para trabajos profesionales.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20DWE490-B3."
+target="_blank">
+
+Consultar por WhatsApp
+
+</a>
+
+</div>
+
+
+<div class="card product">
+
+<div class="product-image">
+FOTO D28499X
+</div>
+
+<h3>DEWALT D28499X</h3>
+
+<p>
+Amoladora angular de gran tamaño para trabajos pesados.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20consultar%20por%20el%20DEWALT%20D28499X."
+target="_blank">
+
+Consultar por WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- OTRAS MARCAS -->
+
+<div id="stanley" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">STANLEY</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Stanley.</p>
+</div>
+</div>
+
+
+<div id="craftsman" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">CRAFTSMAN</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Craftsman.</p>
+</div>
+</div>
+
+
+<div id="makita" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">MAKITA</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Makita.</p>
+</div>
+</div>
+
+
+<div id="bosch" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">BOSCH</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Bosch.</p>
+</div>
+</div>
+
+
+<div id="ryobi" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">RYOBI</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Ryobi.</p>
+</div>
+</div>
+
+
+<div id="blackdecker" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">BLACK+DECKER</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Black+Decker.</p>
+</div>
+</div>
+
+
+<div id="ingco" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">INGCO</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Ingco.</p>
+</div>
+</div>
+
+
+<div id="total" class="hidden">
+<button class="back" onclick="backBrands()">← VOLVER A MARCAS</button>
+<h2 class="title">TOTAL</h2>
+<div class="card">
+<h3>Próximamente</h3>
+<p>Estamos preparando el catálogo de productos Total.</p>
+</div>
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================= CONTACTO ================= -->
 
-<section class="section contact">
+<!-- CONTACTO -->
+
+<section class="contact">
 
 <div class="container">
 
-<h2 class="section-title">Contacto</h2>
+<h2 class="title">CONTACTO</h2>
 
-<div class="contact-box">
+<p>📍 Guayaquil - Mucho Lote 2</p>
 
-<p>📱 <strong>WhatsApp:</strong> 0960847849</p>
+<p>📱 WhatsApp: 0960847849</p>
 
-<p>📍 <strong>Ubicación:</strong> Guayaquil, Mucho Lote 2</p>
+<p>🕐 Lunes a Viernes: 8:00 AM - 6:00 PM</p>
 
-<p>🕐 <strong>Lunes a Viernes:</strong> 8:00 AM - 6:00 PM</p>
+<p>🕐 Sábado: 10:00 AM - 6:00 PM</p>
 
-<p>🕐 <strong>Sábado:</strong> 10:00 AM - 6:00 PM</p>
-
-<p>🚫 <strong>Domingo:</strong> Cerrado</p>
+<p>❌ Domingo: Cerrado</p>
 
 <br>
 
-<a class="whatsapp"
-href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20información%20sobre%20sus%20servicios.">
-💬 ESCRÍBENOS POR WHATSAPP
+<a class="btn whatsapp"
+href="https://wa.me/593960847849?text=Hola%20JS%20TOOL%20BOX,%20quiero%20información%20sobre%20sus%20productos%20y%20servicios."
+target="_blank">
+
+CONTACTAR POR WHATSAPP
+
 </a>
 
 </div>
 
-</div>
-
 </section>
+
 
 
 <footer>
 
-© 2026 JS TOOL BOX — Herramientas y Servicio Técnico
+© 2026 JS TOOL BOX - Herramientas y Reparaciones
 
 </footer>
 
 
+
 <script>
 
-function hideAllPanels(){
+function hideAll(){
 
     document.getElementById("brands").classList.add("hidden");
 
     document.getElementById("dewalt").classList.add("hidden");
 
-    document.getElementById("otherBrand").classList.add("hidden");
+    document.getElementById("dewalt-electricas").classList.add("hidden");
+
+    document.getElementById("stanley").classList.add("hidden");
+
+    document.getElementById("craftsman").classList.add("hidden");
+
+    document.getElementById("makita").classList.add("hidden");
+
+    document.getElementById("bosch").classList.add("hidden");
+
+    document.getElementById("ryobi").classList.add("hidden");
+
+    document.getElementById("blackdecker").classList.add("hidden");
+
+    document.getElementById("ingco").classList.add("hidden");
+
+    document.getElementById("total").classList.add("hidden");
 
 }
 
 
 function showBrand(brand){
 
-    hideAllPanels();
+    hideAll();
 
-    if(brand === "dewalt"){
+    document.getElementById(brand).classList.remove("hidden");
 
-        document.getElementById("dewalt").classList.remove("hidden");
-
-        showOnlyDewaltCategories();
-
-    }else{
-
-        const names = {
-
-            stanley:"STANLEY",
-
-            craftsman:"CRAFTSMAN",
-
-            makita:"MAKITA",
-
-            bosch:"BOSCH",
-
-            ryobi:"RYOBI",
-
-            blackdecker:"BLACK+DECKER",
-
-            ingco:"INGCO",
-
-            total:"TOTAL"
-
-        };
-
-        document.getElementById("otherBrandTitle").innerText = names[brand];
-
-        document.getElementById("otherBrand").classList.remove("hidden");
-
-    }
-
-}
-
-
-function showOnlyDewaltCategories(){
-
-    document.getElementById("dewaltCategories").classList.remove("hidden");
-
-    document.getElementById("dewalt-electric").classList.add("hidden");
-
-    document.getElementById("dewalt-cordless").classList.add("hidden");
-
-    document.getElementById("dewalt-batteries").classList.add("hidden");
-
-    document.getElementById("dewalt-parts").classList.add("hidden");
-
-    document.getElementById("dewalt-accessories").classList.add("hidden");
+    document.getElementById("catalogo").scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 
 
 function showCategory(category){
 
-    document.getElementById("dewaltCategories").classList.add("hidden");
-
-    document.getElementById("dewalt-electric").classList.add("hidden");
-
-    document.getElementById("dewalt-cordless").classList.add("hidden");
-
-    document.getElementById("dewalt-batteries").classList.add("hidden");
-
-    document.getElementById("dewalt-parts").classList.add("hidden");
-
-    document.getElementById("dewalt-accessories").classList.add("hidden");
+    hideAll();
 
     document.getElementById(category).classList.remove("hidden");
+
+    document.getElementById("catalogo").scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 
 
 function backBrands(){
 
-    hideAllPanels();
+    hideAll();
 
     document.getElementById("brands").classList.remove("hidden");
 
-}
+    document.getElementById("catalogo").scrollIntoView({
+        behavior:"smooth"
+    });
 
+}
 
 </script>
 

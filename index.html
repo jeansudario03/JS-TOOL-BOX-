@@ -157,6 +157,111 @@ footer{
     grid-template-columns: 1fr;
   }
 }
+.brands {
+  padding: 60px 20px;
+  text-align: center;
+  background: #0a0a0a;
+}
+
+.brands h2 {
+  color: #f5c400;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.brands-subtitle {
+  color: #aaa;
+  margin-bottom: 35px;
+}
+
+.brands-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.brand-card {
+  height: 130px;
+  background: #111;
+  border: 2px solid #292929;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.brand-card:hover {
+  transform: translateY(-7px);
+  border-color: #f5c400;
+  box-shadow: 0 0 20px rgba(245, 196, 0, 0.3);
+}
+
+.brand-logo {
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.dewalt {
+  color: #f5c400;
+  background: #111;
+  padding: 10px 18px;
+  border: 3px solid #f5c400;
+}
+
+.stanley {
+  color: #fff;
+  background: #e31b23;
+  padding: 10px 18px;
+}
+
+.craftsman {
+  color: #fff;
+  background: #d71920;
+  padding: 10px 18px;
+}
+
+.makita {
+  color: #fff;
+  background: #009bdf;
+  padding: 10px 18px;
+}
+
+.bosch {
+  color: #e00000;
+}
+
+.ryobi {
+  color: #8bc34a;
+}
+
+.blackdecker {
+  color: #f5c400;
+  font-size: 20px;
+}
+
+.ingco {
+  color: #ffb000;
+}
+
+.total {
+  color: #0b8f3c;
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 </head>
@@ -230,21 +335,49 @@ target="_blank">
 </section>
 
 <section>
-<h2>Marcas que <span>trabajamos</span></h2>
+<section id="marcas" class="brands">
+  <h2>MARCAS CON LAS QUE TRABAJAMOS</h2>
+  <p class="brands-subtitle">Calidad y respaldo para tus herramientas</p>
 
-<div class="grid">
+  <div class="brands-grid">
 
-<div class="card"><h3>DEWALT</h3></div>
-<div class="card"><h3>STANLEY</h3></div>
-<div class="card"><h3>CRAFTSMAN</h3></div>
-<div class="card"><h3>MAKITA</h3></div>
-<div class="card"><h3>BOSCH</h3></div>
-<div class="card"><h3>RYOBI</h3></div>
-<div class="card"><h3>BLACK+DECKER</h3></div>
-<div class="card"><h3>INGCO</h3></div>
-<div class="card"><h3>TOTAL</h3></div>
+    <div class="brand-card">
+      <div class="brand-logo dewalt">DEWALT</div>
+    </div>
 
-</div>
+    <div class="brand-card">
+      <div class="brand-logo stanley">STANLEY</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo craftsman">CRAFTSMAN</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo makita">Makita</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo bosch">BOSCH</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo ryobi">RYOBI</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo blackdecker">BLACK+DECKER</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo ingco">INGCO</div>
+    </div>
+
+    <div class="brand-card">
+      <div class="brand-logo total">TOTAL</div>
+    </div>
+
+  </div>
 </section>
 
 <section class="contact">
